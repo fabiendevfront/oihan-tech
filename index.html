@@ -8,21 +8,75 @@
     <script type="module" src="/src/js/main.js"></script>
     <title>Oihan Tech</title>
   </head>
-  <body class="font-jost">
-    <header>
-      <a href="/"
-        ><img src="./src/assets/images/logo.jpg" alt="Oihan Tech - Accueil"
-      /></a>
-      <button class="menu-toggle">Menu</button>
-      <nav class="menu">
-        <ul>
-          <li><a href="#accueil">Accueil</a></li>
-          <li><a href="#depannage">Dépannage</a></li>
-          <li><a href="#formation">Formation</a></li>
-          <li><a href="#creation">Création Web</a></li>
-        </ul>
-        <a href="#contact" class="contact-button">Contact</a>
-      </nav>
+  <body class="font-jost text-oihan-dark">
+    <header class="bg-oihan-surface sticky top-0 z-50 w-full">
+      <div
+        class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3"
+      >
+        <a href="/"
+          ><img
+            src="./src/assets/images/logo.jpg"
+            alt="Oihan Tech - Accueil"
+            class="h-18 w-auto"
+        /></a>
+        <button class="menu-toggle md:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-menu-icon lucide-menu text-oihan-primary h-11 w-11"
+          >
+            <path d="M4 5h16" />
+            <path d="M4 12h16" />
+            <path d="M4 19h16" />
+          </svg>
+        </button>
+        <nav
+          class="menu absolute top-full left-0 flex w-full flex-col items-center justify-between gap-8 bg-white px-4 py-4 shadow-md md:static md:w-auto md:flex-row md:bg-transparent md:py-0 md:shadow-none"
+        >
+          <ul
+            class="flex flex-col items-center gap-4 text-lg whitespace-nowrap md:flex-row"
+          >
+            <li>
+              <a
+                href="#accueil"
+                class="hover:text-oihan-primary transition-colors"
+                >Accueil</a
+              >
+            </li>
+            <li>
+              <a
+                href="#depannage"
+                class="hover:text-oihan-primary transition-colors"
+                >Dépannage</a
+              >
+            </li>
+            <li>
+              <a
+                href="#formation"
+                class="hover:text-oihan-primary transition-colors"
+                >Formation</a
+              >
+            </li>
+            <li>
+              <a
+                href="#creation"
+                class="hover:text-oihan-primary transition-colors"
+                >Création Web</a
+              >
+            </li>
+          </ul>
+          <a
+            href="#contact"
+            class="contact-button bg-oihan-primary hover:bg-oihan-dark block w-full max-w-xs rounded-lg px-4 py-2 text-center font-bold text-white shadow-sm transition-colors duration-300 ease-in-out md:inline-block md:w-auto"
+            >Contact</a
+          >
+        </nav>
+      </div>
     </header>
   </body>
 </html>
