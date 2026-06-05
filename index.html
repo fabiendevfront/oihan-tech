@@ -19,7 +19,11 @@
             alt="Oihan Tech - Accueil"
             class="h-18 w-auto"
         /></a>
-        <button class="menu-toggle md:hidden">
+        <button
+          class="menu-toggle md:hidden"
+          aria-expanded="false"
+          aria-label="Ouvrir le menu"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -28,15 +32,30 @@
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-menu-icon lucide-menu text-oihan-primary h-11 w-11"
+            class="lucide lucide-menu-icon lucide-menu text-oihan-primary icon-open h-11 w-11"
           >
             <path d="M4 5h16" />
             <path d="M4 12h16" />
             <path d="M4 19h16" />
           </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-x-icon lucide-x text-oihan-primary icon-close hidden h-11 w-11"
+          >
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg>
         </button>
         <nav
-          class="menu absolute top-full left-0 flex w-full flex-col items-center justify-between gap-8 bg-white px-4 py-4 shadow-md md:static md:w-auto md:flex-row md:bg-transparent md:py-0 md:shadow-none"
+          class="menu absolute top-full left-0 hidden w-full flex-col items-center justify-between gap-8 bg-white px-4 py-4 shadow-md md:static md:flex md:w-auto md:flex-row md:bg-transparent md:py-0 md:shadow-none"
         >
           <ul
             class="flex flex-col items-center gap-4 text-lg whitespace-nowrap md:flex-row"
