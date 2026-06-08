@@ -97,5 +97,58 @@
         </nav>
       </div>
     </header>
+    <main>
+      <section
+        id="accueil"
+        class="to-oihan-surface bg-gradient-to-b from-white px-4 py-14 md:py-24"
+      >
+        <div
+          class="mx-auto flex max-w-7xl flex-col gap-10 md:flex-row md:items-center md:gap-16"
+        >
+          <!-- 1. Zone texte (gauche sur desktop) -->
+          <div class="flex flex-col gap-6 md:w-1/2">
+            <h1
+              class="text-oihan-dark text-3xl leading-tight font-bold md:text-5xl"
+            >
+              L'informatique simple, locale et durable à Anglet.
+            </h1>
+
+            <p class="text-oihan-dark/70 text-base leading-relaxed md:text-lg">
+              Dépannage à domicile, formation personnalisée et création de sites
+              web performants pour particuliers et professionnels sur la Côte
+              Basque.
+            </p>
+
+            <!-- Boutons : empilés sur mobile, côte à côte sur desktop -->
+            <div class="flex flex-col gap-3 md:flex-row">
+              <a
+                href="#services"
+                class="bg-oihan-primary hover:bg-oihan-dark active:bg-oihan-dark block rounded-xl px-6 py-3 text-center font-bold text-white shadow-md transition-colors duration-300 active:scale-95"
+              >
+                Voir les services
+              </a>
+              <a
+                href="#contact"
+                class="border-oihan-primary text-oihan-primary hover:bg-oihan-light/40 active:bg-oihan-light/40 block rounded-xl border-2 px-6 py-3 text-center font-bold transition-colors duration-300 active:scale-95"
+              >
+                Demander un devis
+              </a>
+            </div>
+          </div>
+
+          <!-- 2. Zone image (droite sur desktop) -->
+          <div class="w-full md:w-1/2">
+            <img
+              src="./src/assets/images/hero.jpg"
+              alt="Espace de travail informatique moderne et épuré"
+              class="h-auto w-full rounded-xl object-cover shadow-sm"
+              width="600"
+              height="400"
+              loading="eager"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
