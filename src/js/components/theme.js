@@ -4,7 +4,7 @@ export const initTheme = () => {
   const iconSun = document.getElementById("icon-sun");
   const html = document.documentElement;
 
-  // Au chargement : on restaure la préférence sauvegardée
+  // On load: restore the saved preference
   if (localStorage.getItem("theme") === "dark") {
     html.classList.add("dark");
     iconMoon.classList.add("hidden");
@@ -15,10 +15,10 @@ export const initTheme = () => {
     html.classList.toggle("dark");
     const isDark = html.classList.contains("dark");
 
-    // Sauvegarde dans localStorage pour persister entre les visites
+    // Save to localStorage to retain data across visits
     localStorage.setItem("theme", isDark ? "dark" : "light");
 
-    // Swap des icônes
+    // Swap icons
     iconMoon.classList.toggle("hidden", isDark);
     iconSun.classList.toggle("hidden", !isDark);
   });
