@@ -8,8 +8,12 @@
     <script type="module" src="/src/js/main.js"></script>
     <title>Oihan Tech</title>
   </head>
-  <body class="font-jost text-oihan-dark">
-    <header class="bg-oihan-surface sticky top-0 z-50 w-full">
+  <body
+    class="font-jost text-oihan-dark dark:bg-oihan-dark dark:text-oihan-surface"
+  >
+    <header
+      class="bg-oihan-surface dark:bg-oihan-dark sticky top-0 z-50 w-full"
+    >
       <div
         class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3"
       >
@@ -19,88 +23,127 @@
             alt="Oihan Tech - Accueil"
             class="h-18 w-auto"
         /></a>
-        <button
-          class="menu-toggle md:hidden"
-          aria-expanded="false"
-          aria-label="Ouvrir le menu"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-menu-icon lucide-menu text-oihan-primary icon-open h-11 w-11"
+        <div class="flex items-center gap-3">
+          <button
+            class="menu-toggle md:hidden"
+            aria-expanded="false"
+            aria-label="Ouvrir le menu"
           >
-            <path d="M4 5h16" />
-            <path d="M4 12h16" />
-            <path d="M4 19h16" />
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-x-icon lucide-x text-oihan-primary icon-close hidden h-11 w-11"
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-menu-icon lucide-menu text-oihan-primary dark:text-oihan-light icon-open h-9 w-9"
+            >
+              <path d="M4 5h16" />
+              <path d="M4 12h16" />
+              <path d="M4 19h16" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-x-icon lucide-x text-oihan-primary dark:text-oihan-light icon-close hidden h-9 w-9"
+            >
+              <path d="M18 6 6 18" />
+              <path d="m6 6 12 12" />
+            </svg>
+          </button>
+          <nav
+            class="menu dark:bg-oihan-dark absolute top-full left-0 hidden w-full flex-col items-center justify-between gap-8 bg-white px-4 py-4 shadow-md md:static md:flex md:w-auto md:flex-row md:bg-transparent md:py-0 md:shadow-none md:dark:bg-transparent"
           >
-            <path d="M18 6 6 18" />
-            <path d="m6 6 12 12" />
-          </svg>
-        </button>
-        <nav
-          class="menu absolute top-full left-0 hidden w-full flex-col items-center justify-between gap-8 bg-white px-4 py-4 shadow-md md:static md:flex md:w-auto md:flex-row md:bg-transparent md:py-0 md:shadow-none"
-        >
-          <ul
-            class="flex flex-col items-center gap-4 text-lg whitespace-nowrap md:flex-row"
+            <ul
+              class="flex flex-col items-center gap-4 text-lg whitespace-nowrap md:flex-row"
+            >
+              <li>
+                <a
+                  href="#accueil"
+                  class="hover:text-oihan-primary dark:text-oihan-surface dark:hover:text-oihan-light transition-colors"
+                  >Accueil</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#depannage"
+                  class="hover:text-oihan-primary dark:text-oihan-surface dark:hover:text-oihan-light transition-colors"
+                  >Dépannage</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#formation"
+                  class="hover:text-oihan-primary dark:text-oihan-surface dark:hover:text-oihan-light transition-colors"
+                  >Formation</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#creation"
+                  class="hover:text-oihan-primary dark:text-oihan-surface dark:hover:text-oihan-light transition-colors"
+                  >Création Web</a
+                >
+              </li>
+            </ul>
+            <a
+              href="#contact"
+              class="contact-button bg-oihan-primary dark:hover:bg-oihan-primary/80 hover:bg-oihan-dark block w-full max-w-xs rounded-lg px-4 py-2 text-center font-bold text-white shadow-sm transition-colors duration-300 ease-in-out md:inline-block md:w-auto"
+              >Contact</a
+            >
+          </nav>
+          <button
+            id="theme-toggle"
+            aria-label="Activer le mode sombre"
+            class="text-oihan-primary hover:text-oihan-dark dark:text-oihan-light transition-colors dark:hover:text-white"
           >
-            <li>
-              <a
-                href="#accueil"
-                class="hover:text-oihan-primary transition-colors"
-                >Accueil</a
-              >
-            </li>
-            <li>
-              <a
-                href="#depannage"
-                class="hover:text-oihan-primary transition-colors"
-                >Dépannage</a
-              >
-            </li>
-            <li>
-              <a
-                href="#formation"
-                class="hover:text-oihan-primary transition-colors"
-                >Formation</a
-              >
-            </li>
-            <li>
-              <a
-                href="#creation"
-                class="hover:text-oihan-primary transition-colors"
-                >Création Web</a
-              >
-            </li>
-          </ul>
-          <a
-            href="#contact"
-            class="contact-button bg-oihan-primary hover:bg-oihan-dark block w-full max-w-xs rounded-lg px-4 py-2 text-center font-bold text-white shadow-sm transition-colors duration-300 ease-in-out md:inline-block md:w-auto"
-            >Contact</a
-          >
-        </nav>
+            <!-- Icône Lune (visible en mode light) -->
+            <svg
+              id="icon-moon"
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+            <!-- Icône Soleil (visible en mode dark) -->
+            <svg
+              id="icon-sun"
+              xmlns="http://www.w3.org/2000/svg"
+              class="hidden h-6 w-6"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
     <main>
       <section
         id="accueil"
-        class="to-oihan-surface bg-gradient-to-b from-white px-4 py-14 md:py-24"
+        class="to-oihan-surface dark:from-oihan-dark dark:to-oihan-dark/80 bg-gradient-to-b from-white px-4 py-14 md:py-24"
       >
         <div
           class="mx-auto flex max-w-7xl flex-col gap-10 md:flex-row md:items-center md:gap-16"
@@ -108,12 +151,14 @@
           <!-- 1. Zone texte (gauche sur desktop) -->
           <div class="flex flex-col gap-6 md:w-1/2">
             <h1
-              class="text-oihan-dark text-3xl leading-tight font-bold md:text-5xl"
+              class="text-oihan-dark dark:text-oihan-surface text-3xl leading-tight font-bold md:text-5xl"
             >
               L'informatique simple, locale et durable à Anglet.
             </h1>
 
-            <p class="text-oihan-dark/70 text-base leading-relaxed md:text-lg">
+            <p
+              class="text-oihan-dark/70 dark:text-oihan-surface/70 text-base leading-relaxed md:text-lg"
+            >
               Dépannage à domicile, formation personnalisée et création de sites
               web performants pour particuliers et professionnels sur la Côte
               Basque.
@@ -129,7 +174,7 @@
               </a>
               <a
                 href="#contact"
-                class="border-oihan-primary text-oihan-primary hover:bg-oihan-light/40 active:bg-oihan-light/40 block rounded-xl border-2 px-6 py-3 text-center font-bold transition-colors duration-300 active:scale-95"
+                class="border-oihan-primary text-oihan-primary dark:border-oihan-light dark:text-oihan-light hover:bg-oihan-light/40 dark:hover:bg-oihan-light/10 active:bg-oihan-light/40 block rounded-xl border-2 px-6 py-3 text-center font-bold transition-colors duration-300 active:scale-95"
               >
                 Demander un devis
               </a>
