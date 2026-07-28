@@ -241,7 +241,8 @@
               </p>
               <button
                 type="button"
-                aria-label="En savoir plus sur la formation informatique"
+                data-service="repair"
+                aria-label="En savoir plus sur le dépannage et l'assistance"
                 aria-haspopup="dialog"
                 class="group border-oihan-primary text-oihan-primary hover:bg-oihan-primary dark:border-oihan-light dark:text-oihan-light dark:hover:bg-oihan-light dark:hover:text-oihan-dark focus:ring-oihan-primary/30 dark:focus:ring-oihan-light/50 mt-auto flex items-center gap-2 rounded-lg border-2 bg-transparent px-5 py-2.5 font-bold transition-all duration-300 hover:text-white focus:ring-4 focus:outline-none active:scale-95"
               >
@@ -297,6 +298,7 @@
               </p>
               <button
                 type="button"
+                data-service="training"
                 aria-label="En savoir plus sur la formation informatique"
                 aria-haspopup="dialog"
                 class="group border-oihan-primary text-oihan-primary hover:bg-oihan-primary dark:border-oihan-light dark:text-oihan-light dark:hover:bg-oihan-light dark:hover:text-oihan-dark focus:ring-oihan-primary/30 dark:focus:ring-oihan-light/50 mt-auto flex items-center gap-2 rounded-lg border-2 bg-transparent px-5 py-2.5 font-bold transition-all duration-300 hover:text-white focus:ring-4 focus:outline-none active:scale-95"
@@ -351,7 +353,8 @@
               </p>
               <button
                 type="button"
-                aria-label="En savoir plus sur la formation informatique"
+                data-service="webdev"
+                aria-label="En savoir plus sur le développement web"
                 aria-haspopup="dialog"
                 class="group border-oihan-primary text-oihan-primary hover:bg-oihan-primary dark:border-oihan-light dark:text-oihan-light dark:hover:bg-oihan-light dark:hover:text-oihan-dark focus:ring-oihan-primary/30 dark:focus:ring-oihan-light/50 mt-auto flex items-center gap-2 rounded-lg border-2 bg-transparent px-5 py-2.5 font-bold transition-all duration-300 hover:text-white focus:ring-4 focus:outline-none active:scale-95"
               >
@@ -375,5 +378,64 @@
         </div>
       </section>
     </main>
+    <!-- SERVICE MODAL SKELETON -->
+    <dialog
+      id="service-modal"
+      class="bg-oihan-surface dark:bg-oihan-dark dark:border-oihan-light/20 m-0 mt-auto w-full max-w-none flex-col rounded-t-2xl p-0 shadow-2xl transition-all backdrop:bg-black/60 backdrop:backdrop-blur-sm open:flex md:m-auto md:max-w-2xl md:rounded-2xl dark:border"
+      aria-labelledby="modal-title"
+    >
+      <!-- Modal Content Container -->
+      <div class="relative flex w-full flex-col p-6 md:p-8">
+        <!-- Close Button -->
+        <button
+          id="close-modal"
+          type="button"
+          class="text-oihan-dark/50 hover:text-oihan-primary hover:bg-oihan-light/20 dark:text-oihan-surface/50 dark:hover:text-oihan-light focus:ring-oihan-primary/30 dark:focus:ring-oihan-light/50 absolute top-4 right-4 rounded-full p-2 transition-colors focus:ring-4 focus:outline-none"
+          aria-label="Fermer la modale"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-x"
+          >
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg>
+        </button>
+
+        <!-- Modal Dynamic Content (Will be injected by JS) -->
+        <div id="modal-content" class="mt-2">
+          <!-- Title -->
+          <h3
+            id="modal-title"
+            class="text-oihan-dark dark:text-oihan-surface mb-4 text-2xl font-bold md:text-3xl"
+          ></h3>
+
+          <!-- Intro Paragraph -->
+          <p
+            id="modal-intro"
+            class="text-oihan-dark/80 mb-6 text-lg dark:text-white/80"
+          ></p>
+
+          <!-- Features List -->
+          <ul id="modal-features" class="mb-8 space-y-3"></ul>
+
+          <!-- Call to Action -->
+          <a
+            href="#contact"
+            class="bg-oihan-primary hover:bg-oihan-dark dark:hover:bg-oihan-light dark:hover:text-oihan-dark block w-full rounded-xl px-6 py-4 text-center font-bold text-white shadow-md transition-all duration-300 active:scale-95 sm:w-max"
+          >
+            Demander un devis
+          </a>
+        </div>
+      </div>
+    </dialog>
   </body>
 </html>
