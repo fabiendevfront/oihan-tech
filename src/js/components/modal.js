@@ -4,6 +4,7 @@ import { servicesData } from "../data/servicesData.js";
 export const initModal = () => {
   const modal = document.getElementById("service-modal");
   const closeBtn = document.getElementById("close-modal");
+  const modalCtaBtn = document.getElementById("modal-cta-btn");
 
   // Modal content targets
   const modalTitle = document.getElementById("modal-title");
@@ -15,7 +16,7 @@ export const initModal = () => {
     'button[aria-haspopup="dialog"]',
   );
 
-  if (!modal || !closeBtn) return;
+  if (!modal || !closeBtn || !modalCtaBtn) return;
 
   /**
    * Populate modal with specific service data
@@ -60,6 +61,11 @@ export const initModal = () => {
 
   // Event Listener for Close Button
   closeBtn.addEventListener("click", () => {
+    modal.close();
+  });
+
+  // Close modal when click on CTA button
+  modalCtaBtn.addEventListener("click", () => {
     modal.close();
   });
 
