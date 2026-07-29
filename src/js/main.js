@@ -2,7 +2,8 @@ import { initNavbar } from "./components/navbar.js";
 import { initTheme } from "./components/theme.js";
 import { initModal } from "./components/modal.js";
 import { initContactForm } from "./components/contactForm.js";
-import { initObfuscation } from "./components/obfuscation.js";
+import { initObfuscation } from "./utils/obfuscation.js";
+import { updateCopyrightYear } from "./utils/dateUtils.js";
 
 // Toggle mobile menu
 initNavbar();
@@ -14,3 +15,5 @@ initModal();
 initContactForm();
 // Reconstruct protected contact info
 initObfuscation();
+// Update dynamic dates
+updateCopyrightYear();

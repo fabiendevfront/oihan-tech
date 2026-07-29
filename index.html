@@ -651,6 +651,19 @@
                 >
                   Envoyer le message
                 </button>
+                <!-- RGPD -->
+                <p
+                  class="text-oihan-dark/70 mt-3 text-center text-xs dark:text-white/70"
+                >
+                  Vos données servent uniquement à traiter votre demande.
+                  <br class="hidden sm:block" />
+                  Détails dans les
+                  <a
+                    href="/mentions-legales.html"
+                    class="hover:text-oihan-primary dark:hover:text-oihan-light focus:ring-oihan-primary rounded underline transition-colors focus:ring-2 focus:outline-none"
+                    >mentions légales</a
+                  >.
+                </p>
 
                 <!-- Success/Error Message Container -->
                 <div
@@ -786,6 +799,139 @@
         </div>
       </section>
     </main>
+    <!-- FOOTER SECTION -->
+    <footer
+      class="bg-oihan-dark border-oihan-primary border-t-4 px-4 pt-16 pb-8 dark:bg-black/60"
+    >
+      <div
+        class="mx-auto grid max-w-7xl grid-cols-1 gap-10 md:grid-cols-3 md:gap-8"
+      >
+        <!-- Column 1: Branding -->
+        <div
+          class="flex flex-col items-center gap-4 text-center md:items-start md:text-left"
+        >
+          <a
+            href="#accueil"
+            class="inline-block"
+            aria-label="Retour à l'accueil"
+          >
+            <img
+              src="./src/assets/images/logo.jpg"
+              alt="Logo Oihan Tech"
+              class="h-16 w-auto rounded-lg shadow-sm"
+              loading="lazy"
+            />
+          </a>
+          <p class="text-oihan-light/80 mt-2 max-w-xs text-sm leading-relaxed">
+            L'informatique simple, locale et durable à Anglet. Dépannage,
+            formation et création de sites web.
+          </p>
+        </div>
+
+        <!-- Column 2: Navigation & Legal -->
+        <div class="flex flex-col items-center gap-4 md:items-start">
+          <h3 class="text-oihan-surface text-lg font-bold">Navigation</h3>
+          <ul
+            class="text-oihan-light/80 flex flex-col items-center gap-3 text-sm md:items-start"
+          >
+            <li>
+              <a
+                href="#accueil"
+                class="hover:text-oihan-primary focus:text-oihan-primary transition-colors focus:outline-none"
+                >Accueil</a
+              >
+            </li>
+            <li>
+              <a
+                href="#services"
+                class="hover:text-oihan-primary focus:text-oihan-primary transition-colors focus:outline-none"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="/mentions-legales.html"
+                class="hover:text-oihan-primary focus:text-oihan-primary transition-colors focus:outline-none"
+                >Mentions légales</a
+              >
+            </li>
+          </ul>
+          <!-- Copyright placed logically under links -->
+          <p class="text-oihan-surface/40 mt-4 text-xs">
+            &copy; <span id="copyright-year">2026</span> Oihan Tech.<br
+              class="md:hidden"
+            />
+            Tous droits réservés.
+          </p>
+        </div>
+
+        <!-- Column 3: Quick Contact -->
+        <div class="flex flex-col items-center gap-4 md:items-start">
+          <h3 class="text-oihan-surface text-lg font-bold">Contact</h3>
+          <div class="text-oihan-light/80 flex flex-col gap-3 text-sm">
+            <!-- Protected Email -->
+            <div class="flex items-center gap-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="text-oihan-primary"
+              >
+                <rect width="20" height="16" x="2" y="4" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
+              <a
+                href="#"
+                class="protected-email hover:text-oihan-primary transition-colors"
+                data-user="contact"
+                data-domain="oihantech.fr"
+                aria-label="Afficher l'email"
+              >
+                Voir l'email
+              </a>
+            </div>
+
+            <!-- Protected Phone -->
+            <div class="flex items-center gap-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="text-oihan-primary"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                />
+              </svg>
+              <a
+                href="#"
+                class="protected-phone hover:text-oihan-primary transition-colors"
+                data-part1="06"
+                data-part2="16"
+                data-part3="23"
+                data-part4="39"
+                data-part5="27"
+                aria-label="Afficher le téléphone"
+              >
+                Voir le numéro
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- SERVICE MODAL SKELETON -->
     <dialog
       id="service-modal"

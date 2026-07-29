@@ -1,3 +1,4 @@
+// Toggle Light & dark theme
 export const initTheme = () => {
   const toggle = document.getElementById("theme-toggle");
   const iconMoon = document.getElementById("icon-moon");

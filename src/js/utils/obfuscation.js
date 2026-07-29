@@ -1,7 +1,4 @@
-/**
- * Reconstructs protected email and phone links on the client side.
- * Prevents basic HTML scrapers
- */
+// Reconstructs protected email and phone links on the client side. Prevents basic HTML scrapers
 export const initObfuscation = () => {
   // Reconstruct Email
   document.querySelectorAll(".protected-email").forEach((el) => {
@@ -27,5 +24,22 @@ export const initObfuscation = () => {
 
     el.textContent = phoneStr;
     el.href = `tel:${phoneLink}`;
+  });
+
+  // Reconstruct Protected Text (Name, Address, SIRET)
+  document.querySelectorAll(".protected-text").forEach((el) => {
+    const textParts = [];
+    let index = 1;
+
+    // Dynamically collect data-part1, data-part2, etc.
+    while (el.getAttribute(`data-part${index}`)) {
+      textParts.push(el.getAttribute(`data-part${index}`));
+      index++;
+    }
+
+    // Join the array elements with a space
+    if (textParts.length > 0) {
+      el.textContent = textParts.join(" ");
+    }
   });
 };
