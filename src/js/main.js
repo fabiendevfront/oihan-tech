@@ -4,6 +4,7 @@ import { initModal } from "./components/modal.js";
 import { initContactForm } from "./components/contactForm.js";
 import { initObfuscation } from "./utils/obfuscation.js";
 import { updateCopyrightYear } from "./utils/dateUtils.js";
+import { initBackToTop } from "./components/backToTop.js";
 
 // Toggle mobile menu
 initNavbar();
@@ -17,3 +18,5 @@ initContactForm();
 initObfuscation();
 // Update dynamic dates
 updateCopyrightYear();
+// Back to Top function
+initBackToTop();
