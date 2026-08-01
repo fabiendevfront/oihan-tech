@@ -2,7 +2,13 @@
 <html lang="fr" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="" />
+    <link rel="icon" type="image/svg+xml" href="/favicon-light.svg" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      media="(prefers-color-scheme: dark)"
+      href="/favicon-dark.svg"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/styles/style.css" />
     <script type="module" src="/src/js/main.js"></script>
@@ -19,11 +25,16 @@
       <div
         class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3"
       >
-        <a href="#accueil">
+        <a href="#accueil" aria-label="Accueil Oihan Tech">
           <img
-            src="./src/assets/images/logo.jpg"
-            alt="Oihan Tech - Accueil"
-            class="h-18 w-auto"
+            src="./src/assets/images/logo-horizontal-light.svg"
+            alt="Logo Oihan Tech"
+            class="block h-18 w-auto py-2 dark:hidden"
+          />
+          <img
+            src="./src/assets/images/logo-horizontal-dark.svg"
+            alt="Logo Oihan Tech"
+            class="hidden h-18 w-auto py-2 dark:block"
           />
         </a>
         <div class="flex items-center gap-3">
@@ -816,7 +827,7 @@
             aria-label="Retour à l'accueil"
           >
             <img
-              src="./src/assets/images/logo.jpg"
+              src="./src/assets/images/logo-horizontal-dark.svg"
               alt="Logo Oihan Tech"
               class="h-16 w-auto rounded-lg shadow-sm"
               loading="lazy"

@@ -1,4 +1,4 @@
-//Handle the "Back to Top" button visibility and scroll behavior.
+// Handle the "Back to Top" button visibility and scroll behavior.
 export const initBackToTop = () => {
   const button = document.getElementById("back-to-top");
 
