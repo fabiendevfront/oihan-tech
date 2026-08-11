@@ -4,7 +4,7 @@ export const servicesData = {
   repair: {
     title: "Dépannage & Assistance",
     intro:
-      "Je me déplace chez vous pour diagnostiquer et résoudre vos problèmes informatiques, ou je vous assiste à distance.",
+      "Je me déplace chez vous pour diagnostiquer et réparer vos appareils, en vous expliquant le processus, ou je vous accompagne à distance.",
     features: [
       "Réparation matérielle (PC fixe, portable, Mac)",
       "Nettoyage virus, malwares et lenteurs",
@@ -26,11 +26,11 @@ export const servicesData = {
   webdev: {
     title: "Développement Web",
     intro:
-      "Création de sites internet modernes, rapides, éco-conçus et optimisés pour le référencement (SEO).",
+      "Un site pensé pour votre activité : rapide, éco-conçu et optimisé pour le référencement (SEO) local.",
     features: [
       "Site vitrine One-page ou Multi-pages",
       "Développement sur-mesure (HTML/CSS/JS/React)",
-      "Refonte et modernisation de sites existants",
+      "Accessibilité numérique (RGAA) et navigation clavier",
       "Optimisation SEO local (Côte Basque)",
     ],
   },
