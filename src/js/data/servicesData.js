@@ -31,7 +31,7 @@ export const servicesData = {
       "Site vitrine One-page ou Multi-pages",
       "Développement sur-mesure (HTML/CSS/JS/React)",
       "Accessibilité numérique (RGAA) et navigation clavier",
-      "Optimisation SEO local (Côte Basque)",
+      "Optimisation SEO local",
     ],
   },
 };
