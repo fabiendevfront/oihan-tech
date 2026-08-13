@@ -5,6 +5,8 @@
 
 ## 🌲 Overview
 
+🔗 [oihantech.fr](https://oihantech.fr)
+
 Static one-page website for **Oihan Tech**, a freelance IT services micro-business based in Anglet (Basque Country, France).
 
 The name "Oihan" translates to "forest" in Basque. The design system is heavily inspired by local nature, featuring a primary teal palette (`#047272`), organic curves, and a strong commitment to digital sustainability and accessibility.
@@ -41,3 +43,5 @@ The name "Oihan" translates to "forest" in Basque. The design system is heavily 
 
 The project is currently hosted on **Infomaniak**.
 The Vite build process automatically outputs optimized static assets to the `dist/` directory. Only the compiled contents of this `dist/` folder are uploaded to the production server.
+
+This project is proprietary — see [LICENSE](./LICENSE) for details.
